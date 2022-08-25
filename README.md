@@ -1,6 +1,6 @@
 # HTML_CSS_NetNinja
 
-### This repo follows an introductory [tutorial](https://github.com/iamshaunjp/docker-crash-course) series by [netninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7) for [Docker](https://www.docker.com/).
+### This repo follows an introductory [tutorial](https://github.com/iamshaunjp/html-and-css-crash-course) series by [netninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G) for HTML & CSS.
 
 ### What you'll find here:
 
@@ -15,4 +15,12 @@
 
 ### Why'd I do the tutorial?
 
-- At my last company, they used docker-compose files extensively, and I had no prior exposure to them. I learned the syntax, how to use Docker's desktop application, and how to implement the company's images and containers within their broader ecosystem (in the monorepo, in GCloud, etc.) as best I could. I did so on-the-fly, but really hated how lost I felt the whole time. This is my study project, and I plan to use what I've learned in any applicable future projects (I'm especially excited to attempt to implement Docker on my main personal project 😁😎😁!)
+- This is a quick refresher and cementer, before I do a bunch of modern CSS, front end framework, and architecture practice/development
+
+- Background:
+
+  > Most of my experience with HTML & CSS is itterative: often, I had a small problem and quickly "googled a thing". I really enjoy being well-versed in these languages, because even though they're relatively simple ones, they're also (obviously) ubiquitous. At this point, I trust the tutorial's content creator to structure things in such a way that
+
+  > 1. Any _essentials_ I missed will get covered and,
+
+  > 2. I can finally feel roundly confident this skill's in the ol' toolbox 🧰🤓💪
