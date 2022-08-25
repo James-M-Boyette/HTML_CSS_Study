@@ -1,0 +1,8 @@
+- Often, naming files with "index.html" is a good practice because ?browsers? look for this file by default in the root of a website's directory
+- A page's head tag contains things like meta-data (Which i need to research more later), title etc
+- "div" = "division"; html5's 'symantic' tags are replacing these generic ones
+- "span" tags are intended to let you to insert CSS or JS into the html
+- As of html5, tags that had no potential content within them (< br >, < hr >, < img >, etc.) no longer required "self-closing" slashes (< img />) and just need their vanilla instantiation (< img >)
+- In < img > tags, the "alt" property allows you to provide text descriptions for screen readers (which wont display the actual image); it's an accessibility feature
+- The "action" attribute in form tags will provide instructions on what to do with the data inputed
+- The "type" attribute of a form's _input_ describes the expected data type to be received
