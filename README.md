@@ -19,6 +19,10 @@
 
 - Background:
 
-  > Most of my experience with HTML & CSS is itterative: often, I had a small problem and quickly "googled a thing". I really enjoy being well-versed in these languages, because even though they're relatively simple ones, they're also (obviously) ubiquitous. At this point, I trust the tutorial's content creator to structure things in such a way that
-  > 1. Any _essentials_ I missed will get covered and,
+  > Most of my experience with HTML & CSS is itterative: often, I had a small problem and quickly "googled a thing". I really enjoy being well-versed in these languages, because even though they're relatively simple ones, they're also (obviously) ubiquitous.
+  > 
+  > ... (and I've needed to use them so often that I'd like to make sure I'm not committing any great sins!). 
+  > 
+  > At this point, I trust the tutorial's content creator to structure things **so** well that
+  > 1. Any _essentials_ I've missed get covered and,
   > 2. I can finally feel roundly confident this skill's in the ol' toolbox 🧰🤓💪
