@@ -1,0 +1,82 @@
+/* Styles any 'paragraph' element */
+p {
+  color: black;
+}
+
+/* This styles any 'anchor' element nested within a 'nav' element */
+/* Note: this is also true for classes, IDs etc - if we wanted to target all links inside of a parent element that had an ID of "nav-bar", we'd write `#nav-bar a` */
+nav a {
+  color: #ffc800;
+  background-color: blue;
+}
+
+/* This styles any element (should only be one, given that its an ID) with an ID of "page-title" */
+#page-title {
+  color: #ffc800;
+  background-color: #577088;
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 2px solid #ffdc5f;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* This styles any element with the class of "summary-thoughts */
+.summary-thoughts {
+  margin-left: 10px;
+}
+
+/* This styles any element with a class of "summary" *and* that is also a 'paragraph' element (both have to be true). */
+/* Note: these can be chained, so you could target an element with two classes in the following way: p.summary.main-summary */
+p.summary {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* This targets any element following a designated one, using plus ("+") */
+#lorem-spacing + .lorem-summary {
+  color: white;
+  background-color: #577088;
+  padding: 10px;
+}
+
+/* This targets any child element of a parent, using carrot (">") */
+#lorem-example > p.lorem {
+  color: white;
+  background-color: #577088;
+  font-style: italic;
+}
+
+/* You can also target attributes, using brackets ("[]"):  */
+[href] {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+/* Note: you can even specify a specific attribute value: */
+[href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2OMWYF3uWwKcQcfdkk4YPw2wT11tiVDfQA&usqp=CAU"]
+{
+  font-weight: bold !important;
+  color: #fc0000 !important;
+  background-color: #b39b00 !important;
+}
+
+/* You can even simply to "incluces" using asterisc ("*") */
+[href*="google"] {
+  font-weight: bold !important;
+  color: #fceb00 !important;
+  background-color: #003d06 !important;
+}
+
+/* Or target anything that "ends with", using dollar ("$") */
+/* This is useful if, for instance, you had some links that downloaded pdfs - and you could both style those links differently *and* use a pdf icon! */
+[href$="pvorg"] {
+  font-weight: bold !important;
+  color: #37fc00 !important;
+  background-color: #003d06 !important;
+}

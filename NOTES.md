@@ -38,3 +38,9 @@
   2. it _will_ have padding and margin all the way around (like a normal block element)
 
 - "**Default Browser styles**": an accessibility feature, this is what makes HTML tags have the 'out-of-the-box' stylings that they have (h tags are bigger and bolder, list items have 'disc' bullet points, etc.). "User agent stylesheet" represents the rules asserted by the browser.
+
+- IDs are, according to Sean, mainly used for JS - they _can_ be used for CSS, but it's preferred that one use \_
+
+- If you want to quickly fill an element with "Lorem Ipsum" text, type `lorem`
+
+- "**Cascading / Inheritance**": some CSS properties are passed on to children (like font styling), while others are not (padding, margin, etc.). If you'd like normally-uninherited properties to be passed on to child elements, you need set the given child's uninherited property to "inherit" (`margin: inherit`)
