@@ -13,32 +13,91 @@
       <a href="examples.html">HTML styling</a>
     </nav>
 
-    <h1>CSS Basics</h1>
-
-    <h2>Inline elements:</h2>
-    <span>span tag</span>
-    <em>em tag</em>
-    <a href="">anchor tag</a>
-    <span>span tag</span>
-
-    <h2>Block-level elements</h2>
-
-    <div>div tag</div>
-    <div>another div tag ...</div>
-    <h3>h3 tag</h3>
-    <p>paragraph tag</p>
-    <ul>
-      <li>li tag</li>
-      <li>antoehr li <tag></tag></li>
-    </ul>
+    <h1 class="special">CSS Basics</h1>
+    <!-- <p class="special2">
+      Here is a basic example of what CSS stylesheets can do for us:
+    </p>
+    <p class="special2">
+      In this example, we've inserted a
+      <code class="special">< link ></code>
+      tag in the <em>header</em> of the page in order to import
+      <u>specific CSS rules</u> from
+      <code class="special">demo1.css</code>
+    </p> -->
+    <p>Here is a basic example of what CSS stylesheets can do for us:</p>
+    <p>
+      In this example, we've inserted a
+      <code class="special">< link ></code>
+      tag in the <em>header</em> of the page in order to import
+      <u>specific CSS rules</u> from
+      <code class="special">demo1.css</code>
+    </p>
 
     <p>
-      Here is a basic example of a linked CSS stylesheet - where we've inserted
-      a < link > tag in the header of the page in order to import the specific
-      rules of <code>demo1.css</code>
+      The first thing to note is how we can change the styling of elements using
+      these imported rules ...
+    </p>
+
+    <br> <br>
+
+    <h2 class="special">Imported CSS Rules:</h2>
+    <p>
+      Here, we've changed the styling of "p"(aragraph) and unordered list tags, changing multiple things including
+      <ol>
+        <li>their font color</li>
+        <li>their alignment</li>
+        <li>their borders</li>
+        <li>their list bullet point styles</li>
+        <li>and their whether they should be treated as columns (like a newspaper)</li>
+      </ol>
     </p>
 
     <div>
+      <p class="special">paragraph tag</p>
+      <ul class="special">
+        <li class="special">li tag</li>
+        <li class="special">another li tag</li>
+        <li class="special">a third li tag</li>
+      </ul>
+    </div>
+
+    <br> <br>
+
+    <p>
+      The second thing to note is how general "block-level"
+      and "inline" categories impact content "straight out of the box" ...
+    </p>
+
+    <h2 class="special">Block v Inline Elements:</h2>
+    <p>Here, we can see how the allocation of space on a page is assigned using either "block" or "inline" designations.</p>
+    <p>
+      The former (block elements) will take up an entire line on their own:
+    </p>
+    <div>
+      <div class="special">div tag</div>
+      <div class="special">another div tag ...</div>
+      <div class="special"><h3>h3 tag</h3></div>
+      <div class="special"><p>paragraph tag</p></div>
+      <div class="special">
+        <ul>
+          <li>li tag</li>
+          <li>antoehr li <tag></tag></li>
+        </ul>
+      </div>
+    </div>
+    <p>
+      The latter (inline elements) only take up the space that their content requires
+      (so we end up having multiple images, spans, links etc directly next to each other):
+    </p>
+
+    <div class="special">
+      <span>span tag</span>
+      <em>em tag</em>
+      <a href="">anchor tag</a>
+      <span>span tag</span>
+    </div>
+
+    <!-- <div>
       <h2>My Fav Superheros ...</h2>
       <p>
         What's my favorite nerd pastime? A toss-up between Star Wars & comic
@@ -50,6 +109,6 @@
         <li>Superman</li>
         <li>James</li>
       </ul>
-    </div>
+    </div> -->
   </body>
 </html>

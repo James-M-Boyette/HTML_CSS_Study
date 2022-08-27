@@ -1,14 +1,46 @@
 h1 {
-  color: orange;
-  background-color: slategray;
+}
+
+p {
+}
+
+ul {
+}
+
+li {
+}
+
+span {
+}
+
+div {
+}
+
+h1.special {
+  /* color: orange; */
+  color: #ffc800;
+  background-color: rgb(87, 112, 136);
   font-size: 25px;
   /* text-decoration: line-through; */
   text-decoration: underline;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 2px solid #ffdc5f;
+  border-radius: 5px;
+  padding: 10px;
+}
+h2.special {
+  color: #ffc800;
+  background-color: rgb(87, 112, 136);
+  border: 2px solid #ffdc5f;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 80%;
 }
 
-p {
+p.special {
   color: slategray;
   text-align: right;
   line-height: 30px; /* This controls space between lines */
@@ -16,32 +48,45 @@ p {
   column-count: 3;
   column-gap: 60px;
 }
+p.special2 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
 
-ul {
+ul.special {
   /* border-width: 4px;
   border-style: solid;
   border-color: crimson; */
   /* border: 4px solid crimson; */
-  border-bottom: 4px solid crimson;
-  border-left: 8px dashed crimson;
+  /* border-bottom: 4px solid crimson; */
+  border-bottom: 4px solid rgb(220, 60, 20);
+  /* border-left: 8px dashed crimson; */
+  border-left: 8px dashed rgb(220, 60, 20);
 }
 
-li {
+li.special {
   list-style: georgian;
   /* text-shadow: 2px 3px lightgray; */
   text-shadow: 2px 3px #e9e9e9;
 }
 
-span {
+span.special {
   /* display: block; */
   margin: 20px;
   padding: 20px;
 }
 
-div {
+div.special {
   /* Here, we're setting a normally block-level element to be an in-line element */
   /* display: inline;  */
-  border: 2px solid crimson;
+  /* border: 2px solid crimson; */
+  border: 2px solid rgb(220, 60, 20);
   margin: 20px;
   padding: 20px;
+}
+
+code.special {
+  color: #ffc800;
+  background-color: rgb(87, 112, 136);
 }
