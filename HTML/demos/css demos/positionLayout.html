@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning HTML</title>
+    <link rel="stylesheet" href="/css/positionLayout.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="banner">
+        <img src="/img/html.png" alt="HTML demo banner image" />
+      </section>
+      <header>
+        <nav id="nav-bar">
+          <a href="/HTML/index.html" id="main-link">Project Overview</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Vanilla HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/html demos/basicHTML.html">Basic HTML</a>
+              <a href="/HTML/demos/html demos/basicForm.html">HTML Form</a>
+              <a href="/HTML/demos/html demos/semantics.html">Semantic HTML</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              CSS-Infused HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/css demos/basicCSS.html">Basic CSS</a>
+              <a href="/HTML/demos/css demos/targetCSS.html">Targetted CSS</a>
+              <!-- <a href="/HTML/demos/css demos/positionLayout.html"
+                >Position Layout</a
+              > -->
+            </div>
+          </div>
+          <a href="/HTML/demo.html" id="demo-link">DEMO page</a>
+        </nav>
+      </header>
+      <section id="position-layout-demo">
+        <!-- STATIC example -->
+        <!-- <div id="ex-static"> -->
+        <div class="example-field">
+          <div id="box-static">
+            <span class="demo-text">"Static Element"</span>
+          </div>
+          <div class="explanation-text">
+            Static elements are are to the top-right corner of their respective
+            container.
+          </div>
+        </div>
+
+        <!-- RELATIVE example -->
+        <!-- <div id="ex-relative"> -->
+        <div class="example-field">
+          <div id="box-rel">
+            <span class="demo-text">"Relative Element"</span>
+          </div>
+          <div
+            class="explanation-text"
+            style="margin-bottom: 0px; margin-top: 50px"
+          >
+            Relative elements can be aligned relative to their parent element .
+          </div>
+          <div class="explanation-text" style="margin-top: 0px">
+            (Here, we've set "top" to 20px and "left" to 10%, so that our box is
+            moved, relative to the parent "example-field."
+            <br />
+            Moreover, the above text also needs an additional 20px top margin to
+            avoid being overlapped by the box!)
+          </div>
+        </div>
+
+        <!-- FIXED example -->
+        <!-- <div id="ex-fixed"> -->
+        <div class="example-field">
+          <div id="box-fixed">
+            <span class="demo-text">"Fixed Element"</span>
+          </div>
+          <div class="explanation-text">Fixed elements are.</div>
+        </div>
+
+        <!-- ABSOLUTE example -->
+        <!-- <div id="ex-absolute"> -->
+        <div class="example-field">
+          <div id="box-abs" style="position: relative; left: 0%; top: 0%">
+            <span class="demo-text">"Absolute Element"</span>
+          </div>
+          <div class="explanation-text">Absolute elements are.</div>
+        </div>
+
+        <!-- STICKY example -->
+        <!-- <div id="ex-sticky"> -->
+        <div class="example-field">
+          <div id="box-sticky">
+            <span class="demo-text">"Sticky Element"</span>
+          </div>
+          <div class="explanation-text">Sticky elements are.</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

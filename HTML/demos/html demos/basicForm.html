@@ -2,101 +2,138 @@
 <html>
   <head>
     <title>HTML Form Examples</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="nav-bar">
-      <a href="index.html">index page</a>
-      <a href="about.html">about page</a>
-      <a href="form.html">Form inputs</a>
-      <a href="examples.html">HTML styling</a>
-    </div>
-    <h1>HTML Forms</h1>
+    <main>
+      <section id="banner">
+        <img src="/img/html.png" alt="HTML demo banner image" />
+      </section>
+      <header>
+        <nav id="nav-bar">
+          <a href="/HTML/index.html" id="main-link">Project Overview</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Vanilla HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/html demos/basicHTML.html">Basic HTML</a>
+              <a href="/HTML/demos/html demos/basicForm.html">HTML Form</a>
+              <a href="/HTML/demos/html demos/semantics.html">Semantic HTML</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              CSS-Infused HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/css demos/basicCSS.html">Basic CSS</a>
+              <a href="/HTML/demos/css demos/targetCSS.html">Targetted CSS</a>
+              <!-- <a href="/HTML/demos/css demos/positionLayout.html"
+                >Position Layout</a
+              > -->
+            </div>
+          </div>
+          <a href="/HTML/demo.html" id="demo-link">DEMO page</a>
+        </nav>
+      </header>
 
-    <form action="signup.js">
-      <!-- Here, we have our first form inputs - ones that will deal largely with text inputs ... -->
-      <div>
-        <!-- "Labels" allow us to link header text to an input field (using the 'for' attribute) -->
-        <label for="username">Enter username:</label>
-        <!-- "Inputs" allow us to create various types of user-submitted fields. We can control the type of data inputted via the 'type' property, and use IDs to target said input field (and its data). In this case, we can use our ID to associate a "label" with this input field. -->
-        <!-- The 'name' type allows us to do server-side processing, and grab the data directly for PHP, Node.js, etc server-side actions. It also allows us to group inputs together (like in the case of a radial menu - see below) -->
-        <!-- The 'required' attribute allows us to add a validation check to the form, and require that there be something entered into the field -->
-        <input type="text" name="username" id="username" required />
+      <h1>HTML Forms</h1>
+
+      <form action="signup.js">
+        <!-- Here, we have our first form inputs - ones that will deal largely with text inputs ... -->
+        <div>
+          <!-- "Labels" allow us to link header text to an input field (using the 'for' attribute) -->
+          <label for="username">Enter username:</label>
+          <!-- "Inputs" allow us to create various types of user-submitted fields. We can control the type of data inputted via the 'type' property, and use IDs to target said input field (and its data). In this case, we can use our ID to associate a "label" with this input field. -->
+          <!-- The 'name' type allows us to do server-side processing, and grab the data directly for PHP, Node.js, etc server-side actions. It also allows us to group inputs together (like in the case of a radial menu - see below) -->
+          <!-- The 'required' attribute allows us to add a validation check to the form, and require that there be something entered into the field -->
+          <input type="text" name="username" id="username" required />
+          <br /><br />
+          <label for="email">Enter email:</label>
+          <!-- The 'email' type allows us to 1. load a different keyboard (that includes the @ symbol) for users, and perform some auto-validations -->
+          <input type="email" name="email" id="email" required />
+          <br /><br />
+          <label for="password">Enter password</label>
+          <!-- The 'password' type will hide the user's input.  -->
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <!-- Here, we have the first of two "radio" input sections. In order to group the first three inputs together *and* make them mutually-exclusive (where you can only select one), we use the same 'name' attribute for each.  -->
+        <div>
+          <p>Choose a gender:</p>
+          <!-- Because these are 'radio' inputs, we are supplying the 'value' under-the-hood to the server: the value of whatever radio input is selected will be passed on to the server. -->
+          <input type="radio" name="gender" value="male" id="gender-1" /> Male
+          <br />
+          <input type="radio" name="gender" value="female" id="gender-2" />
+          Female
+          <br />
+          <input type="radio" name="gender" value="other" id="gender-3" /> other
+          <br />
+        </div>
+        <!-- Here, we have our second "radio" input section - and because these inputs have a different (shared) 'name' attribute, the user can make a single selection in either/both sections without effecting the other! -->
+        <div>
+          <p>Choose your age:</p>
+          <!-- Because these are 'radio' inputs, we are supplying the 'value' under-the-hood to the server: the value of whatever radio input is selected will be passed on to the server. -->
+          <input type="radio" name="age" value="underage" /> Under 21 <br />
+          <input type="radio" name="age" value="adult" /> 21+ <br />
+        </div>
+
         <br /><br />
-        <label for="email">Enter email:</label>
-        <!-- The 'email' type allows us to 1. load a different keyboard (that includes the @ symbol) for users, and perform some auto-validations -->
-        <input type="email" name="email" id="email" required />
+
+        <!-- Here, we have a "select" input, and whatever 'option(s)' we provide will be displayed in a drop-down menu. We can combine this with a 'text' input for something like a security check ... -->
+        <div>
+          <label for="security-question">Select a security question:</label>
+          <select name="security-question" id="security-question">
+            <option value="highschool">What highschool did you attend?</option>
+            <option value="mom-maiden-name">
+              What is your mother's maiden name?
+            </option>
+            <option value="car-make-model">
+              What was the make and model of your first car?
+            </option>
+          </select>
+          <br />
+          <br />
+          <label for="security-answer">Provide a security answer:</label>
+          <input
+            type="text"
+            name="security-answer"
+            id="security-answer"
+            required
+          />
+        </div>
+
         <br /><br />
-        <label for="password">Enter password</label>
-        <!-- The 'password' type will hide the user's input.  -->
-        <input type="password" name="password" id="password" required />
-      </div>
 
-      <!-- Here, we have the first of two "radio" input sections. In order to group the first three inputs together *and* make them mutually-exclusive (where you can only select one), we use the same 'name' attribute for each.  -->
-      <div>
-        <p>Choose a gender:</p>
-        <!-- Because these are 'radio' inputs, we are supplying the 'value' under-the-hood to the server: the value of whatever radio input is selected will be passed on to the server. -->
-        <input type="radio" name="gender" value="male" id="gender-1" /> Male
-        <br />
-        <input type="radio" name="gender" value="female" id="gender-2" /> Female
-        <br />
-        <input type="radio" name="gender" value="other" id="gender-3" /> other
-        <br />
-      </div>
-      <!-- Here, we have our second "radio" input section - and because these inputs have a different (shared) 'name' attribute, the user can make a single selection in either/both sections without effecting the other! -->
-      <div>
-        <p>Choose your age:</p>
-        <!-- Because these are 'radio' inputs, we are supplying the 'value' under-the-hood to the server: the value of whatever radio input is selected will be passed on to the server. -->
-        <input type="radio" name="age" value="underage" /> Under 21 <br />
-        <input type="radio" name="age" value="adult" /> 21+ <br />
-      </div>
+        <!-- Here, we have a "textarea" input. -->
+        <div>
+          <p>
+            We'd love to know more about you. Please tell us a bit about
+            yourself!
+          </p>
+          <label for="bio">Bio:</label> <br />
+          <!-- Of note, 'textarea' inputs can be re-sized by the *user* - so if they want more horizontal or vertical width, they can grab the 'handle' at the bottom-right corner of the text field! -->
+          <!-- Also, we have chosen to not pre-populate the field with permanent text (text the user would need to either add-on to or delete before adding their own words) by inserting a 'placeholder' property (instead of placing text between the 'textarea' tags) -->
+          <textarea
+            name="bio"
+            id="bio"
+            cols="50"
+            rows="10"
+            placeholder="Please write a brief bio for yourself!"
+          ></textarea>
+        </div>
+        <br /><br />
 
-      <br /><br />
-
-      <!-- Here, we have a "select" input, and whatever 'option(s)' we provide will be displayed in a drop-down menu. We can combine this with a 'text' input for something like a security check ... -->
-      <div>
-        <label for="security-question">Select a security question:</label>
-        <select name="security-question" id="security-question">
-          <option value="highschool">What highschool did you attend?</option>
-          <option value="mom-maiden-name">
-            What is your mother's maiden name?
-          </option>
-          <option value="car-make-model">
-            What was the make and model of your first car?
-          </option>
-        </select>
-        <br />
-        <br />
-        <label for="security-answer">Provide a security answer:</label>
-        <input
-          type="text"
-          name="security-answer"
-          id="security-answer"
-          required
-        />
-      </div>
-
-      <br /><br />
-
-      <!-- Here, we have a "textarea" input. -->
-      <div>
-        <p>
-          We'd love to know more about you. Please tell us a bit about yourself!
-        </p>
-        <label for="bio">Bio:</label> <br />
-        <!-- Of note, 'textarea' inputs can be re-sized by the *user* - so if they want more horizontal or vertical width, they can grab the 'handle' at the bottom-right corner of the text field! -->
-        <!-- Also, we have chosen to not pre-populate the field with permanent text (text the user would need to either add-on to or delete before adding their own words) by inserting a 'placeholder' property (instead of placing text between the 'textarea' tags) -->
-        <textarea
-          name="bio"
-          id="bio"
-          cols="50"
-          rows="10"
-          placeholder="Please write a brief bio for yourself!"
-        ></textarea>
-      </div>
-      <br /><br />
-
-      <!-- Here, we have our 'submit' input. Whatever is put in the 'value' attribute will be displayed in the button. Moreover, when the button is clicked, the 'action' attribute of the parent form will be run -->
-      <input type="submit" value="submit the form" />
-    </form>
+        <!-- Here, we have our 'submit' input. Whatever is put in the 'value' attribute will be displayed in the button. Moreover, when the button is clicked, the 'action' attribute of the parent form will be run -->
+        <input type="submit" value="submit the form" />
+      </form>
+    </main>
   </body>
 </html>

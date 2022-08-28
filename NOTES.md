@@ -44,3 +44,44 @@
 - If you want to quickly fill an element with "Lorem Ipsum" text, type `lorem`
 
 - "**Cascading / Inheritance**": some CSS properties are passed on to children (like font styling), while others are not (padding, margin, etc.). If you'd like normally-uninherited properties to be passed on to child elements, you need set the given child's uninherited property to "inherit" (`margin: inherit`)
+
+# Developer Tools (Chrome)
+
+- If you're stuggling to select a given element, you can right-click said element in the dev tools and left-click "copy selector"
+- Overridden rules are struck-through
+- You can edit webpages within the Dev tools in several ways:
+
+  - You can edit the HTML & CSS in-line in the "Elements" tab
+  - You can edit files via the "Source" tab (next to the "Elements" and "Console" tabs, and selecting a file to edit.
+    - **Note**: You can **save** your in-browser work by setting a workspace folder: switch from "Page" tab to "Filesystem" tab and "Add folder to workspace." (you'll need to click 'allow'). If you change code and hit `ctrl + s` your changes will be saved!
+    - (You can even CRUD files & folders via this "Filesystem" interface)
+
+- If you'd like to view your page on different devices, click the icon next to the 'selector' one ("Toggle device toolbar" / `ctrl + shift + m`)
+
+# Position & Layout
+
+- There are **5** position options:
+
+  1. Static
+     - Everything is "static" automatically
+  2. Relative
+     - Shifts the element, relative to its original position
+  3. Fixed
+     - Makes an element relative to the viewport (like a navbar) ... so you could set a navbar to be
+       > `{position:fixed; left:0px top:0px}`
+     - This would make the navbar always sit at the top of the page, even if the user were to scroll down over the content
+  4. Absolute
+     - Allows you to position something "absolutely" relative to its closest parent (_if_ that parent's been given a position property _other than static_)
+     - Ex: you have a parent < div > containing two children elements: a picture, and some text. You want the picture to start at the bottom-left. You can set the child element to `{position: absolute; left: 20px; bottom: 20px}` and this will make it sit 20px's away from the bottom-left corner
+  5. Sticky
+     - A mixture of 'static' and 'fixed,' where it begins as a static element, and then becomes fixed when the user has scrolled to a certain point on the page (Ex: ads on a recipe blog page)
+
+- In video #8, he creates an interesting layout, with
+  1. a _fixed_ bar at the top that says "mario club,"
+  2. a banner with _relative_ text overlayed, and
+  3. a sticky navbar that sticks once the screen scrolls to the bottom of the banner imagen
+
+# Pseudo-classes
+
+- Include "hover," "focused"
+- Invoked using colon (":"); example: `:hover`

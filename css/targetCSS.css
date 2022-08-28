@@ -5,10 +5,14 @@ p {
 
 /* This styles any 'anchor' element nested within a 'nav' element */
 /* Note: this is also true for classes, IDs etc - if we wanted to target all links inside of a parent element that had an ID of "nav-bar", we'd write `#nav-bar a` */
-nav a {
+/**
+* NOTE: I've turned both this, and [href] off in order to stop interfering with the nav-bar's styling!
+*/
+
+/* nav a {
   color: #ffc800;
   background-color: blue;
-}
+} */
 
 /* This styles any element (should only be one, given that its an ID) with an ID of "page-title" */
 #page-title {
@@ -52,11 +56,11 @@ p.summary {
 }
 
 /* You can also target attributes, using brackets ("[]"):  */
-[href] {
+/* [href] {
   font-weight: bold;
   color: white;
   background-color: black;
-}
+} */
 
 /* Note: you can even specify a specific attribute value: */
 [href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2OMWYF3uWwKcQcfdkk4YPw2wT11tiVDfQA&usqp=CAU"]

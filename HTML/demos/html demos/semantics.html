@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning HTML</title>
+    <link rel="stylesheet" href="/css/semantics.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section id="banner">
+        <img src="/img/html.png" alt="HTML demo banner image" />
+      </section>
+      <header>
+        <nav id="nav-bar">
+          <a href="/HTML/index.html" id="main-link">Project Overview</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Vanilla HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/html demos/basicHTML.html">Basic HTML</a>
+              <a href="/HTML/demos/html demos/basicForm.html">HTML Form</a>
+              <a href="/HTML/demos/html demos/semantics.html">Semantic HTML</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              CSS-Infused HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/css demos/basicCSS.html">Basic CSS</a>
+              <a href="/HTML/demos/css demos/targetCSS.html">Targetted CSS</a>
+              <!-- <a href="/HTML/demos/css demos/positionLayout.html"
+                >Position Layout</a
+              > -->
+            </div>
+          </div>
+          <a href="/HTML/demo.html" id="demo-link">DEMO page</a>
+        </nav>
+      </header>
+      <h1 id="page-title">HTML Semantic Tags (as of HTML 5)</h1>
+      <p>Semantic tags are more descriptive than vanilla 'div' tags</p>
+      <ul>
+        <li>The < main > tag:</li>
+        <div class="my-block-quote">
+          This tag should wrap the
+          <strong class="emphasize">main</strong> content of the page - and
+          content that is unique to that page. It shouldn't contain shared
+          content (like nav bars etc) that exists on multiple pages.
+        </div>
+        <li>The < section > tag:</li>
+        <div class="my-block-quote">
+          This tag wraps/defines a specific
+          <strong class="emphasize">section</strong> of the page. Thematic
+          groupings including blog lists, contact info, and even generic content
+          that requires its own space are considered sections (and are often
+          differentiated with explicit 'h' tags declaring their purpose, etc.).
+        </div>
+        <li>The < article > tag:</li>
+        <div class="my-block-quote">
+          This tag wraps/defines any
+          <strong class="emphasize">article</strong> content on the page;
+          self-contained compositions that are indipendantly distributable,
+          re-useable. A forum post, user comment, news or magazine article, or
+          even an interactive widget are all things that exist outside of your
+          webpage, and can be inserted into that page for additional,
+          attributable content.
+        </div>
+        <li>The < aside > tag:</li>
+        <div class="my-block-quote">
+          This tag wraps/defines any
+          <strong class="emphasize">aside</strong> content on the page. "More
+          like this," "cited works," sections and anything else that has to do
+          with the main content, but is tengential in nature is considered an
+          aside.
+        </div>
+        <li>The < header > tag:</li>
+        <div class="my-block-quote">
+          This tag wraps/defines any
+          <strong class="emphasize">header</strong> content on the page. Often,
+          this includes the title, logo, and even navigation.
+        </div>
+        <li>The < footer > tag:</li>
+        <div class="my-block-quote">
+          This tag wraps/defines the
+          <strong class="emphasize">footer</strong> content on a page. Often,
+          this includes contact info, copyright notice.
+        </div>
+      </ul>
+    </main>
+  </body>
+</html>

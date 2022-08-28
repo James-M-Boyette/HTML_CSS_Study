@@ -1,37 +1,70 @@
-<!-- This is a tag -->
 <!DOCTYPE html>
 <html>
   <head>
     <title>Learning HTML</title>
-    <link rel="stylesheet" href="css/demo1.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="nav-bar">
-      <a href="index.html">index page</a>
-      <a href="about.html">about page</a>
-      <a href="form.html">Form inputs</a>
-      <a href="examples.html">HTML styling</a>
-    </div>
+    <main>
+      <section id="banner">
+        <img src="/img/html.png" alt="HTML demo banner image" />
+      </section>
+      <header>
+        <nav id="nav-bar">
+          <a href="/HTML/index.html" id="main-link">Project Overview</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Vanilla HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/html demos/basicHTML.html">Basic HTML</a>
+              <a href="/HTML/demos/html demos/basicForm.html">HTML Form</a>
+              <a href="/HTML/demos/html demos/semantics.html">Semantic HTML</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              CSS-Infused HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/css demos/basicCSS.html">Basic CSS</a>
+              <a href="/HTML/demos/css demos/targetCSS.html">Targetted CSS</a>
+              <!-- <a href="/HTML/demos/css demos/positionLayout.html"
+                >Position Layout</a
+              > -->
+            </div>
+          </div>
+          <a href="/HTML/demo.html" id="demo-link">DEMO page</a>
+        </nav>
+      </header>
 
-    <h1>CSS Basics</h1>
-    <p>
-      Here is a basic example of a linked CSS stylesheet - where we've inserted
-      a < link > tag in the header of the page in order to import the specific
-      rules of <code>demo1.css</code>
-    </p>
-
-    <div>
-      <h2>My Fav Superheros ...</h2>
+      <h1>CSS Basics</h1>
       <p>
-        What's my favorite nerd pastime? A toss-up between Star Wars & comic
-        book heros. But lately, I've been doing a lot of 3D art work focused on
-        DC's pantheon. So, of course, they're top-of-mind 😇🤓
+        Here is a basic example of a linked CSS stylesheet - where we've
+        inserted a < link > tag in the header of the page in order to import the
+        specific rules of <code>demo1.css</code>
       </p>
-      <ul>
-        <li>Batman</li>
-        <li>Superman</li>
-        <li>James</li>
-      </ul>
-    </div>
+
+      <div>
+        <h2>My Fav Superheros ...</h2>
+        <p>
+          What's my favorite nerd pastime? A toss-up between Star Wars & comic
+          book heros. But lately, I've been doing a lot of 3D art work focused
+          on DC's pantheon. So, of course, they're top-of-mind 😇🤓
+        </p>
+        <ul>
+          <li>Batman</li>
+          <li>Superman</li>
+          <li>James</li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>

@@ -2,71 +2,105 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Learning HTML</title>
-    <link rel="stylesheet" href="../../../css/demo2.css" />
+    <title>Basic CSS</title>
+    <link rel="stylesheet" href="/css/targetCSS.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <nav id="nav-bar">
-      <a href="index.html">index page</a>
-      <a href="about.html">about page</a>
-      <a href="form.html">Form inputs</a>
-      <a href="examples.html">HTML styling</a>
-    </nav>
+    <main>
+      <section id="banner">
+        <img src="/img/html.png" alt="HTML demo banner image" />
+      </section>
+      <header>
+        <nav id="nav-bar">
+          <a href="/HTML/index.html" id="main-link">Project Overview</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Vanilla HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/html demos/basicHTML.html">Basic HTML</a>
+              <a href="/HTML/demos/html demos/basicForm.html">HTML Form</a>
+              <a href="/HTML/demos/html demos/semantics.html">Semantic HTML</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              CSS-Infused HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/css demos/basicCSS.html">Basic CSS</a>
+              <a href="/HTML/demos/css demos/targetCSS.html">Targetted CSS</a>
+              <!-- <a href="/HTML/demos/css demos/positionLayout.html"
+                >Position Layout</a
+              > -->
+            </div>
+          </div>
+          <a href="/HTML/demo.html" id="demo-link">DEMO page</a>
+        </nav>
+      </header>
 
-    <div>
-      <h1 id="page-title">Targetted CSS</h1>
-      <p class="summary">
-        What's my favorite nerd pastime? A toss-up between  comic
-        book heros and Star Wars!
-      </p>
-    </div>
-    <div>
-      <h2>My Fav Superheros ...</h2>
-      <p class="summary-thoughts">
-        Why comic book characters? Lately, I've been doing a lot of 3D art work focused on DC's pantheon. So, of course, they're top-of-mind 😇🤓 That said, my first love will always be Marvel, with characters like Hulk & Rogue as stand-out examples of an artistic choice I've been considering ... 
-      </p>
-      <p class="summary-thoughts"> That choice is "How should this character look?"
+      <div>
+        <h1 id="page-title">Targetted CSS</h1>
+        <p class="summary">
+          What's my favorite nerd pastime? A toss-up between  comic
+          book heros and Star Wars!
+        </p>
+      </div>
+      <div>
+        <h2>My Fav Superheros ...</h2>
+        <p class="summary-thoughts">
+          Why comic book characters? Lately, I've been doing a lot of 3D art work focused on DC's pantheon. So, of course, they're top-of-mind 😇🤓 That said, my first love will always be Marvel, with characters like Hulk & Rogue as stand-out examples of an artistic choice I've been considering ... 
+        </p>
+        <p class="summary-thoughts"> That choice is "How should this character look?"
+          <ul>
+            <li><span class="highlight">"How thick should they be?"</span>
+              </li>
+            <li><span class="highlight">"How defined (or not)?"</span>
+              </li>
+            <li><span class="highlight">"What parts should be more exagerated, and what should be as we'd expect?"</span>
+              </li>
+          </ul>
+        </p>
+        <p class="summary-thoughts"> I've become fascinated by the challenge of communicating backstory through these physical choices. It's more than just making sure characters square with their professions etc (a self-professed professional gymnast should look more or less like other gymnasts) - physique can tell you about what people are capable of, what they care about, and even hidden character traits. 
+        </p>
+        <p class="summary-thoughts"> An example I've been working on lately is Superman: how do you communicate that he's different than normal humans? Make him big. But he can't be too big, or we lose connection to him as a sympathetic, human-esque character. And what about his origin story? He's a synergy: a character that <em>should</em> be human, except that he's an alien - so what parts of his body should be bigger? What parts smaller? It seems that for a long time, he was drawn either to look like Christopher Reeve (who had a massive chest/ribcage) or to just <em>feel</em> bigger - while his arms are relatively smaller (and his legs are smaller-still). 
+        </p>
         <ul>
-          <li><span class="highlight">"How thick should they be?"</span>
-            </li>
-          <li><span class="highlight">"How defined (or not)?"</span>
-            </li>
-          <li><span class="highlight">"What parts should be more exagerated, and what should be as we'd expect?"</span>
-            </li>
+          <li>Superman (DC)</li>
+          <li>Hulk (Marvel)</li>
+          <li>Rogue (Marvel)</li>
         </ul>
-      </p>
-      <p class="summary-thoughts"> I've become fascinated by the challenge of communicating backstory through these physical choices. It's more than just making sure characters square with their professions etc (a self-professed professional gymnast should look more or less like other gymnasts) - physique can tell you about what people are capable of, what they care about, and even hidden character traits. 
-      </p>
-      <p class="summary-thoughts"> An example I've been working on lately is Superman: how do you communicate that he's different than normal humans? Make him big. But he can't be too big, or we lose connection to him as a sympathetic, human-esque character. And what about his origin story? He's a synergy: a character that <em>should</em> be human, except that he's an alien - so what parts of his body should be bigger? What parts smaller? It seems that for a long time, he was drawn either to look like Christopher Reeve (who had a massive chest/ribcage) or to just <em>feel</em> bigger - while his arms are relatively smaller (and his legs are smaller-still). 
-      </p>
-      <ul>
-        <li>Superman (DC)</li>
-        <li>Hulk (Marvel)</li>
-        <li>Rogue (Marvel)</li>
-      </ul>
-      <p>Here are links to some of my favorite examples:</p>
-      <nav class="examples">
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2OMWYF3uWwKcQcfdkk4YPw2wT11tiVDfQA&usqp=CAU">Superman's Chest Size</a>
-        <a href="https://www.pinkvilla.com/imageresize/AvengersHulk.jpg?width=752&format=webp&t=pvorg">Hulk's "ape-like" blocky build</a>
-        <a href="https://www.google.com/search?q=rogue+3d+model">Rogue's slim, but almost body-builder definition & size</a>
-      </nav>
-    <div>
-      <h2>My Fav Star Wars Moments ...</h2>
-      <p class="summary-thoughts">
-        What about Star Wars? Well, there are moments that I absolutely love: 
-      </p>
-      <ul>
-        <li>When Han shot first (why, why, why was this changed? I'm obviously beating a dead horse, but it was a defining character moment that added complexity to a kids story 😖)</li>
-        <li>Anything with Lando (in the original trilogy). He added another <em>swagger</em> element to the otherwise ernest, "good v evil" tone of the story. And if you've read any books from the 90's, Zahn's version is even cooler 😎</li>
-        <li>The space battles. I cannot express how happy I am that George (with influence from Steven) attempted to capture the spirit of airplane dog fights in these combat scenes. The influence pays off with action one can follow and empathise with, as well as be surprised by (when they do special, "spaceship-y" things you didn't expect from their conventional forefathers).</li>
-      </ul>
-    </div>
+        <p>Here are links to some of my favorite examples:</p>
+        <nav class="examples">
+          <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2OMWYF3uWwKcQcfdkk4YPw2wT11tiVDfQA&usqp=CAU">Superman's Chest Size</a>
+          <a href="https://www.pinkvilla.com/imageresize/AvengersHulk.jpg?width=752&format=webp&t=pvorg">Hulk's "ape-like" blocky build</a>
+          <a href="https://www.google.com/search?q=rogue+3d+model">Rogue's slim, but almost body-builder definition & size</a>
+        </nav>
+      <div>
+        <h2>My Fav Star Wars Moments ...</h2>
+        <p class="summary-thoughts">
+          What about Star Wars? Well, there are moments that I absolutely love: 
+        </p>
+        <ul>
+          <li>When Han shot first (why, why, why was this changed? I'm obviously beating a dead horse, but it was a defining character moment that added complexity to a kids story 😖)</li>
+          <li>Anything with Lando (in the original trilogy). He added another <em>swagger</em> element to the otherwise ernest, "good v evil" tone of the story. And if you've read any books from the 90's, Zahn's version is even cooler 😎</li>
+          <li>The space battles. I cannot express how happy I am that George (with influence from Steven) attempted to capture the spirit of airplane dog fights in these combat scenes. The influence pays off with action one can follow and empathise with, as well as be surprised by (when they do special, "spaceship-y" things you didn't expect from their conventional forefathers).</li>
+        </ul>
+      </div>
 
-    <div id="lorem-example">
-      <br id="lorem-spacing">
-      <p class="lorem-summary">An example of the time-saving "lorem" auto-complete in vscode:</p>
-      <!-- Here, we typed "lorem" to get an auto-fill of text -->
-      <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, nostrum nulla. Velit, consectetur dolore quam rerum molestiae eum fugiat. Quibusdam asperiores recusandae in. Doloremque quis reprehenderit esse, quam veniam enim! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci libero perferendis sunt commodi at praesentium corrupti explicabo, tempore deleniti animi alias id, nisi maxime pariatur vel cupiditate maiores earum nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam illum minus optio nulla possimus nostrum ea ad temporibus, facere rerum fugit totam in cum, doloremque nesciunt eaque eligendi consequatur?</p>
-    </div>
+      <div id="lorem-example">
+        <br id="lorem-spacing">
+        <p class="lorem-summary">An example of the time-saving "lorem" auto-complete in vscode:</p>
+        <!-- Here, we typed "lorem" to get an auto-fill of text -->
+        <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, nostrum nulla. Velit, consectetur dolore quam rerum molestiae eum fugiat. Quibusdam asperiores recusandae in. Doloremque quis reprehenderit esse, quam veniam enim! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci libero perferendis sunt commodi at praesentium corrupti explicabo, tempore deleniti animi alias id, nisi maxime pariatur vel cupiditate maiores earum nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quibusdam illum minus optio nulla possimus nostrum ea ad temporibus, facere rerum fugit totam in cum, doloremque nesciunt eaque eligendi consequatur?</p>
+      </div>
+    </main>
   </body>
 </html>

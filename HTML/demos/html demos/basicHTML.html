@@ -3,67 +3,101 @@
 <html>
   <head>
     <title>HTML Styling Tag Examples</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="nav-bar">
-      <a href="index.html">index page</a>
-      <a href="about.html">about page</a>
-      <a href="form.html">Form inputs</a>
-      <a href="examples.html">HTML styling</a>
-    </div>
-    <div id="class-based-styling">
-      <h3>HTML <em>tag</em>-based styling:</h3>
-      <p>Text can be styled using the ...</p>
-      <ul>
-        <li><small>< small ></small>,</li>
-        <li><strong>< strong ></strong>,</li>
-        <li>and <em>< em ></em> ('emphasize' = italic) tags!</li>
-      </ul>
-    </div>
-    <div id="header-based-styling">
-      <h3>HTML <em>"header"</em>-based styling:</h3>
-      <p>Text can also be styled using headers:</p>
-      <ul>
-        <li>
-          <h1>H1</h1>
-        </li>
-        <li><h2>H2</h2></li>
-        <li><h3>H3</h3></li>
-        <li><h4>H4</h4></li>
-        <li>etc.</li>
-      </ul>
-    </div>
+    <main>
+      <section id="banner">
+        <img src="/img/html.png" alt="HTML demo banner image" />
+      </section>
+      <header>
+        <nav id="nav-bar">
+          <a href="/HTML/index.html" id="main-link">Project Overview</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Vanilla HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/html demos/basicHTML.html">Basic HTML</a>
+              <a href="/HTML/demos/html demos/basicForm.html">HTML Form</a>
+              <a href="/HTML/demos/html demos/semantics.html">Semantic HTML</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              CSS-Infused HTML
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/HTML/demos/css demos/basicCSS.html">Basic CSS</a>
+              <a href="/HTML/demos/css demos/targetCSS.html">Targetted CSS</a>
+              <!-- <a href="/HTML/demos/css demos/positionLayout.html"
+                >Position Layout</a
+              > -->
+            </div>
+          </div>
+          <a href="/HTML/demo.html" id="demo-link">DEMO page</a>
+        </nav>
+      </header>
+      <div id="class-based-styling">
+        <h3>HTML <em>tag</em>-based styling:</h3>
+        <p>Text can be styled using the ...</p>
+        <ul>
+          <li><small>< small ></small>,</li>
+          <li><strong>< strong ></strong>,</li>
+          <li>and <em>< em ></em> ('emphasize' = italic) tags!</li>
+        </ul>
+      </div>
+      <div id="header-based-styling">
+        <h3>HTML <em>"header"</em>-based styling:</h3>
+        <p>Text can also be styled using headers:</p>
+        <ul>
+          <li>
+            <h1>H1</h1>
+          </li>
+          <li><h2>H2</h2></li>
+          <li><h3>H3</h3></li>
+          <li><h4>H4</h4></li>
+          <li>etc.</li>
+        </ul>
+      </div>
 
-    <div id="lists">
-      <h3>This is an <em>un-ordered</em> list:</h3>
-      <ul>
-        <li>First thing</li>
-        <li>Second thing</li>
-      </ul>
-      <h3>This is an <em>ordered</em> list:</h3>
-      <ol>
-        <li>First idea</li>
-        <li>Second idea</li>
-      </ol>
-    </div>
-    <div>
-      <span
-        >This is a < span > tag with a <br />< br > ("break") tag inserted into
-        it</span
-      >
-    </div>
-    <div>
-      <p>The following is a < blockquote > tag (for quoting people). On its own, the tag indents all of its text to a new margin, and allows you to provide citation</p>
-      <blockquote cite="http://www.oscarwildesite.com">"We are all in the gutter, but some of us are looking at the stars"</blockquote>
-    </div>
-    <div>
-      <p>This is <hr />a horrizontal rule (< hr >) tag</p>
-    </div>
-    <div>
-      <p> <a href="index.html">This</a> is an < a(chor) > tag (used for linking to other pages, etc.)</p>
-    </div>
-    <div>
-      <img src="ninja.png" alt="a picture of a ninja">
-    </div>
+      <div id="lists">
+        <h3>This is an <em>un-ordered</em> list:</h3>
+        <ul>
+          <li>First thing</li>
+          <li>Second thing</li>
+        </ul>
+        <h3>This is an <em>ordered</em> list:</h3>
+        <ol>
+          <li>First idea</li>
+          <li>Second idea</li>
+        </ol>
+      </div>
+      <div>
+        <span
+          >This is a < span > tag with a <br />< br > ("break") tag inserted into
+          it</span
+        >
+      </div>
+      <div>
+        <p>The following is a < blockquote > tag (for quoting people). On its own, the tag indents all of its text to a new margin, and allows you to provide citation</p>
+        <blockquote cite="http://www.oscarwildesite.com">"We are all in the gutter, but some of us are looking at the stars"</blockquote>
+      </div>
+      <div>
+        <p>This is <hr />a horrizontal rule (< hr >) tag</p>
+      </div>
+      <div>
+        <p> <a href="index.html">This</a> is an < a(chor) > tag (used for linking to other pages, etc.)</p>
+      </div>
+      <div>
+        <img src="ninja.png" alt="a picture of a ninja">
+      </div>
+    </main>
   </body>
 </html>
