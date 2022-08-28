@@ -1,30 +1,18 @@
-# HTML_CSS_NetNinja
+# HTML_CSS_Study
 
-### This repo follows an introductory [tutorial](https://github.com/iamshaunjp/html-and-css-crash-course) series by [netninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G) for HTML & CSS.
+
+### This repo tracks my HTML & CSS learning. So far, it includes tutorial work from
+- [HTML & CSS Crash Course](https://github.com/iamshaunjp/html-and-css-crash-course) by [netninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+
+# "*HTML & CSS Crash Course*"
 
 ### What you'll find here:
-
-- My [notes](https://github.com/sou7hernsaint/Docker-Net-Ninja-/blob/main/NOTES.md) from the series
-- Dockerfile(s), .dockerignore(s), and a docker-compose.yaml file
-- Simple front and back end applications to be used in conjunction with Docker (essentially for demo and testing purposes only)
+- A [demo](https://github.com/sou7hernsaint/HTML_CSS_Study/blob/main/HTML/demo.html) synthesizing what I learned
+- My study [notes](https://github.com/sou7hernsaint/HTML_CSS_Study/blob/main/NOTES.md) taken during the series
+- Practice files for both vanilla HTML and CSS-infused HTML
 
 ### How to interact with this repo:
+- If you'd like to see the demo and/or my practice files, clone this repo locally and load the `demo.html` page in your browser (you will need an application like "Live server" or "Nodemon" in order to load both the CSS and HTML properly). The project runs on [localhost:5500](http://localhost:5500), so navigate either to [localhost:5500/HTML/demo.html](http://localhost:5500/HTML/demo.html) or [localhost:5500/HTML/index.html](http://localhost:5500/HTML/index.html) to see the synthesized project or the landing page, respectively. 
 
-- If you'd like to run both front and back end containers, clone this repo locally and run `docker-compose up` at the root of the project. Then, open two internet browser tabs and navigate to [localhost:3000](http://localhost:3000) and [localhost:4000](http://localhost:4000) (the React front end, and Node API back end, respectively). If all goes well, you should see a simple listing of blog posts in the first and a json object in the second.
-- If you'd like to test out the Dockerfiles, use the commands I've listed in the "Working with Docker console" section of my [notes](https://github.com/sou7hernsaint/Docker-Net-Ninja-/blob/main/NOTES.md#7-starting--stopping-containers) to create/update/delete images, containers and volumes
-
-### Why'd I do the tutorial?
-
-- This is a quick refresher and cementer, before I do a bunch of modern CSS, front end framework, and architecture practice/development
-
-- Background:
-
-  > Most of my experience with HTML & CSS is itterative: often, I had a small problem and quickly "googled a thing". I really enjoy being well-versed in these languages, because even though they're relatively simple ones, they're also (obviously) ubiquitous.
-
-  > ... (and I've needed to use them so often that I'd like to make sure I'm not committing any great sins!).
-  >
-  > At this point, I trust the tutorial's content creator to structure things **so** well that
-  >
-  > 1. Any _essentials_ I've missed get covered and,
-
-  > 2. I can finally feel roundly confident this skill's in the ol' toolbox 🧰🤓💪
+### Why'd I do this tutorial?
+- I needed a quick refresher and cementer, before I dove into modern CSS and JavaScript frameworks. In the past, I've learned these two languages piecemeal, and wanted to do at least one "101" course to make sure my fundamentals were solid.
